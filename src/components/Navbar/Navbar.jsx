@@ -4,9 +4,16 @@ import "./Navbar.scss";
 import Title from "../../shared/Title/Title";
 
 const Navbar = () => {
+  const handleTitleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  
   return (
     <nav className="navbar">
-      <Title level={1} text="Protein Store Rosario" />
+      <a href="/" onClick={handleTitleClick} className="navbar-title">
+        <Title level={2} text="Protein Store Rosario" className={"inverse"} />
+      </a>
       <FaShoppingCart className="cart-icon" />
     </nav>
   );
