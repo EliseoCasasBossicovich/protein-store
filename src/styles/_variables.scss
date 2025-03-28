@@ -1,4 +1,21 @@
-$primary-color: #ff5722;
-$secondary-color: #ffc107;
-$text-color: #333;
-$background-color: #f8f9fa;
+// Colores principales
+$teal: #00ADB5;
+$teal-dark: #264653;
+$grey: #393E46;
+$black: #222831;
+$background-color: #FFFFFF;
+$white: #F4F4F4;
+
+// Colores derivados
+$accent-color: #E76F51; // Naranja (Acento)
+$warning-color: #F4A261; // Amarillo Suave
+$text-secondary-color: #6C757D; // Gris claro
+$text-inverse-color: #FFFFFF; // Blanco
+$dark-background: #1D1D1D; // Gris oscuro
+$card-background: #F8F9FA; // Gris muy claro
+
+// Colores de estado
+$success-color: #2A9D8F; // Verde
+$error-color: #E63946; // Rojo
+$info-color: #00ADB5; // Teal
+$border-color: #E0E0E0; // Gris claro

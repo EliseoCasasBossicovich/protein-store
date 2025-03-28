@@ -1,11 +1,12 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import "./Navbar.scss";
+import Title from "../../shared/Title/Title";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Protein Store Rosario</h1>
+      <Title level={1} text="Protein Store Rosario" />
       <FaShoppingCart className="cart-icon" />
     </nav>
   );

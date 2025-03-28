@@ -1,10 +1,10 @@
-@import "../../styles/variables";
+@import "../../styles/_variables";
 @import "../../styles/mixins";
 
 .product-card {
   width: 250px;
   padding: 15px;
-  background: white;
+  background: $card-background;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -14,21 +14,45 @@
     border-radius: 10px;
   }
 
-  h3 {
-    color: $primary-color;
+  p {
+    color: $text-secondary-color; 
+    font-size: 0.9rem;
+    margin: 5px 0 15px;
   }
 
   button {
-    background: $primary-color;
-    color: white;
+    background: $background-color;
+    color: $text-inverse-color;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    transition: background 0.3s ease;
 
     &:hover {
-      background: darken($primary-color, 10%);
+      background: darken($teal-dark, 10%);
+    }
+
+    &.success {
+      background: $teal;
+      &:hover {
+        background: darken($teal, 10%);
+      }
+    }
+
+    &.error {
+      background: $error-color;
+      &:hover {
+        background: darken($error-color, 10%);
+      }
+    }
+
+    &.warning {
+      background: $warning-color;
+      &:hover {
+        background: darken($warning-color, 10%);
+      }
     }
   }
 }

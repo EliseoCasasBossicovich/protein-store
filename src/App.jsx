@@ -7,7 +7,6 @@ function App() {
     <div className="container">
       <Navbar />
       <Products />
-      <h1>Protein Store Rosario</h1>
     </div>
   );
 }
